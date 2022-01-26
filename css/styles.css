@@ -80,12 +80,23 @@ body {
 .studia {
     width: 49px;
     height: 16px;
-    color: #2196F3;
     font-weight: var(--main-font-weight);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: #212121;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studia:hover,
+.portfolio:hover,
+.contacts:hover,
+.studia:focus,
+.portfolio:focus,
+.contacts:focus {
+    color: #2196F3;
 }
 
 .rat {
@@ -126,6 +137,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -137,6 +150,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .conect {
@@ -405,7 +420,7 @@ body {
     align-items: center;
     padding: 12px;
     fill: #AFB1B8;
-    transition: fill 250ms;
+    transition: background-color 250ms, color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -469,7 +484,7 @@ body {
     border-radius: 4px;
     display: block;
     fill: #AFB1B8;
-    transition: fill 250ms;
+    transition: fill 250ms, border-color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -632,9 +647,22 @@ footer {
 .portfolio-2 {
     width: 77px;
     height: 16px;
-    color: #2196F3;
     font-size: 14px;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-2:hover,
+.studia-portfolio:hover,
+.contacts-portfolio:hover {
+    color: #2196F3;
+}
+
+.portfolio-2:focus,
+.studia-portfolio:focus,
+.contacts-portfolio:focus {
+    color: #2196F3;
 }
 
 .studia-portfolio {
@@ -646,6 +674,8 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-portfolio {
@@ -657,6 +687,8 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-portfolio {
@@ -706,7 +738,7 @@ footer {
     letter-spacing: 0.03em;
     color: var(--main-color);
     padding: 6px 22px;
-    transition: color 250ms, bacground-color 250ms;
+    transition: bacground 250ms, color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -737,7 +769,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-bottom: -30px;
 }
 
 .box {
@@ -745,7 +777,6 @@ footer {
     border: 1px solid #EEEEEE;
     list-style-type: none;
     width: calc(100% / 3 - 30px);
-    margin-left: 30px;
     margin-bottom: 30px;
     transition: box-shadow 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -809,7 +840,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    transition: opacity 250ms visibility 250ms;
+    transition: opacity 250ms, visibility 250ms;
 }
 
 .modal-window {
